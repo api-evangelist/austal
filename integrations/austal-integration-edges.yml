@@ -1,0 +1,22 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/austal/integrations
+- https://n8n.io/integrations/austal/
+- https://composio.dev/toolkits/austal
+- https://monid.ai/tools/austal
+checked:
+- https://zapier.com/apps/austal/integrations
+- https://www.make.com/en/integrations/austal
+- https://n8n.io/integrations/austal
+- https://www.austal.com/
+- https://composio.dev/toolkits/austal
+- https://monid.ai/tools/austal
+- https://n8n.io/integrations/austal/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No marketplace listing, integrations/partners page or API contract found. Zapier app page returned 404; n8n
+  returned a 301 redirect away from an app page (no listing); Make returned 403 to our client (unverified). Austal
+  publishes no developer API.

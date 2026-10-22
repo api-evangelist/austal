@@ -1,0 +1,65 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.austal.com/privacy-policy
+scope_note: >-
+  Austal is a shipbuilder and defence prime contractor with no developer API. The only legal page with
+  regulatory content is its corporate website Privacy Policy (governed by the Australian Privacy Act 1988,
+  with an added UK/EU GDPR section). The Disclaimer page (https://www.austal.com/disclaimer, 200) was also
+  read and speaks to none of the catalog signals.
+signals:
+  data_subject_request:
+    url: https://www.austal.com/privacy-policy
+    section: '9. Accessing and correcting your personal information; 12. Your rights if you are in the European Economic Area and the United Kingdom'
+    rights_named: [access, correction, deletion (EEA/UK), restriction (EEA/UK), transfer/portability (EEA/UK), objection (EEA/UK)]
+    channel: Austal Data Protection Officer (email address obfuscated on the page), Austal Limited, 100 Clarence Beach Road, Henderson, Western Australia
+    evidence:
+    - source: https://www.austal.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'If you need access to personal information held by Austal (for example to update or correct it), we will provide access to that information in accordance with the Act.  Where permitted by the Act, a reasonable fee may apply.'
+    - source: https://www.austal.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'You also have the right to object to the processing of your personal data by Austal in certain circumstances.'
+    note: >-
+      Access and correction are offered under the Australian Privacy Act (a fee may apply); EEA/UK data subjects
+      are additionally given access, deletion, restriction, transfer and objection rights "in certain
+      circumstances", exercised via the Data Protection Officer. No response time is stated.
+  incident_notification:
+    url: https://www.austal.com/privacy-policy
+    section: '11. Reporting of Notifiable Data Breaches'
+    evidence:
+    - source: https://www.austal.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Where required by the Act, Austal will notify any affected individuals or corporations, as well as the Office of the Australian Information Commissioner, in respect of notifiable data breaches which occur.'
+    note: >-
+      Commits to notifying affected individuals and the OAIC under the Notifiable Data Breaches scheme and
+      states a data breach response plan exists. No notification timeframe is given.
+  data_residency:
+    url: https://www.austal.com/privacy-policy
+    section: '5. Storage of personal information'
+    evidence:
+    - source: https://www.austal.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Austal presently stores all information on secure servers that are located either on site in Henderson or on proximate backup hardware.'
+    - source: https://www.austal.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'It is likely that some of the entities which provide services to Austal store information overseas.'
+    note: >-
+      States Austal's own storage is on-site in Henderson, Western Australia, and that it does not currently
+      store information overseas, while conceding its service providers likely do. Any future foreign transfer
+      is to follow the Australian Privacy Principles.
+  subprocessors:
+    url: https://www.austal.com/privacy-policy
+    section: '8. Disclosure of personal information'
+    evidence:
+    - source: https://www.austal.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'to third parties appointed by Austal, including our contractors, website and data hosting providers, technology service providers, accountants, lawyers and advisers (in which case Austal uses reasonable steps to ensure such third parties keep your personal information confidential).'
+    note: >-
+      Names the CATEGORIES of third parties that receive personal information. No named subprocessor list is
+      published.

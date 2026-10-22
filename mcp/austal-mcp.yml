@@ -1,0 +1,26 @@
+name: Austal MCP Server
+description: >-
+  No official Model Context Protocol server from Austal was found. Austal is a shipbuilder and defence
+  prime contractor that publishes no developer API, OpenAPI contract or developer portal, so no candidate
+  tool list could be derived either.
+type: MCPServer
+generated: '2026-10-21'
+method: none
+status: absent
+source:
+- https://austal.com/
+- https://investor.austal.com/mcp
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://investor.austal.com/mcp
+  status: 403
+  note: Pre-flight probe got a 403, and the control path got a 403 too (edge policy, opaque). It is not documented or advertised as an MCP endpoint.
+- url: https://austal.com/llms.txt
+  status: 404
+- url: https://www.austal.com/llms.txt
+  status: 404
+- note: A web search (2026-10-21) for an Austal MCP server or developer API turned up no provider-published server or API.

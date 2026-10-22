@@ -1,23 +1,93 @@
 aid: austal
+
 name: Austal
-description: 'Austal is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Austal is an Australian shipbuilder and defence prime contractor, founded in Henderson, Western Australia in 1988 and listed on the Australian Stock Exchange since December 1998. It designs, builds and sustains customised commercial and defence vessels, including ferries and naval ships, from shipyards in Western Australia, the United States, Vietnam and the Philippines, having delivered more than 350 vessels for 122 operators in 59 countries. It also offers vessel sustainment, training and consultancy, autonomy, advanced manufacturing and platform systems. Its public website publishes no developer API, documentation or developer portal.
+
 url: https://raw.githubusercontent.com/api-evangelist/austal/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Shipbuilding
+- Defence
+- Maritime
+- Manufacturing
+- Australia
+- Vessel Sustainment
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.austal.com/themes/custom/austal_independence/logo.svg
+
 common:
+- type: Hosts
+  url: hosts/austal-hosts.yml
+- type: Vendors
+  url: vendors/austal-vendors.yml
+- type: DomainSecurity
+  url: security/austal-domain-security.yml
 - type: Website
-  url: https://austal.com/
+  url: https://www.austal.com/
+- type: About
+  url: https://www.austal.com/our-company
+- type: News
+  url: https://www.austal.com/news
+- type: Contact
+  url: https://www.austal.com/contact-us
+- type: PrivacyPolicy
+  url: https://www.austal.com/privacy-policy
+- type: Disclaimer
+  url: https://www.austal.com/disclaimer
+- type: InvestorRelations
+  url: https://investor.austal.com
+- type: Twitter
+  url: https://twitter.com/austal
+- type: LinkedIn
+  url: https://www.linkedin.com/company/austal
+- type: YouTube
+  url: https://www.youtube.com/channel/UCq0fITHdTGxoMt0m7HSarFQ
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Identity verified from www.austal.com (title "Home | Austal", Our company page). No developer portal, API docs or API reference linked anywhere on the site; investor.austal.com returned 403 to our crawler (linked from the homepage, kept as live-by-edge-policy).
+  evidence:
+  - url: https://austal.com/
+    status: 200
+  - url: https://www.austal.com/our-company
+    status: 200
+  - url: https://www.austal.com/news
+    status: 200
+  - url: https://www.austal.com/contact-us
+    status: 200
+  - url: https://www.austal.com/privacy-policy
+    status: 200
+  - url: https://www.austal.com/disclaimer
+    status: 200
+  - url: https://investor.austal.com
+    status: 403
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
